@@ -34,7 +34,8 @@
     "build": "npm run clean && ttsc -p src",
     "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "typeorm": "ts-node ./node_modules/.bin/typeorm"
+    "typeorm": "ts-node ./node_modules/.bin/typeorm",
+    "migrations": "ts-node ./node_modules/.bin/typeorm migration:run"
   },
   "author": "",
   "license": "ISC"
