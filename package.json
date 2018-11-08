@@ -1,0 +1,41 @@
+{
+  "name": "typegraphql-bootstrap",
+  "version": "1.0.0",
+  "description": "bootstrap project using typegraphql framework, typeorm, postgres and sentry error logging",
+  "main": "index.js",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "@sentry/node": "^4.2.3",
+    "dotenv": "^6.0.0",
+    "graphql-yoga": "^1.16.2",
+    "mjml": "^4.2.0",
+    "pg": "^7.5.0",
+    "reflect-metadata": "^0.1.10",
+    "ts-transformer-keys": "^0.3.3",
+    "type-graphql": "^0.14.0",
+    "typedi": "^0.8.0",
+    "typeorm": "0.2.7",
+    "typeorm-typedi-extensions": "^0.2.1",
+    "typescript": "^3.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^4.0.3",
+    "@types/node": "^8.0.29",
+    "@types/uuid": "^3.4.4",
+    "rimraf": "^2.6.2",
+    "ts-node": "3.3.0",
+    "ttypescript": "^1.5.5",
+    "typescript": "2.5.2"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "debug": "ts-node --inspect src/index.ts",
+    "build": "npm run clean && ttsc -p src",
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typeorm": "ts-node ./node_modules/.bin/typeorm"
+  },
+  "author": "",
+  "license": "ISC"
+}

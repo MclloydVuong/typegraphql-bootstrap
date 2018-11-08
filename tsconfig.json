@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es2016", "esnext.asynciterable"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "plugins": [{ "transform": "ts-transformer-keys/transformer" }],
+    "sourceMap": true,
+    "target": "es2017"
+  }
+}
